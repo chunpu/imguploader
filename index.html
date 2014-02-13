@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#box {
+  width: 600px;
+  margin: 0 auto;
+}
+.code {
+  font-family: Courier, Consolas;
+  width: 600px;
+  margin: 50px auto;
+  border: 2px dashed #b35e4d;
+  color: #90A5AA;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 1.5em;
+  letter-spacing: 1.3px;
+}
+body {
+  background: #725C5C;
+}
+</style>
+</head>
+<body>
+  <div class='code'>
+  var box = document.getElementById('box')<br>
+  WebUploader(box)
+
+  </div>
+  <div id='box'></div>
+</body>
+<script>
+window.onload = function() {
+  var box = document.getElementById('box')
+  WebUploader(box)
+}
+</script>
+<script src='./imguploader.js'></script>
+</html>
